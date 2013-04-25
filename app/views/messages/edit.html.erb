@@ -1,0 +1,6 @@
+<form action="/messages/<%= @message.id %>" method="post">
+  Name: <input type="text" name="name" value="<%= @message.name %>">
+  Contact: <input type="text" name="contact" value="<%= @message.contact %>">
+  Description: <input type="text" name="description" value="<%= @message.description %>">
+  <input type="submit">
+</form>

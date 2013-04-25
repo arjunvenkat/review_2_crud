@@ -1,0 +1,12 @@
+<h1>Messages</h1>
+
+
+<ul>
+  <% @messages.each do |message| %>
+    <li><%= message.name %></li>
+    <li><%= message.contact %></li>
+    <li><%= message.description %></li>
+    <li><%= link_to('show', "/messages/#{message.id}") %></li>
+    <br>
+  <% end %>
+</ul>
